@@ -3,21 +3,21 @@
 	"version": "1.0.1",
 	"description": "Synax highlight component for Ink",
 	"license": "MIT",
+	"type": "module",
 	"repository": "vsashyn/ink-syntax-highlight",
 	"author": {
 		"name": "Vitalii Sashyn",
 		"email": "sashyn.v@gmail.com",
-		"url": "github.com/vsashyn"
+		"url": "https://github.com/vsashyn"
 	},
 	"main": "build",
 	"types": "build/index.d.ts",
 	"engines": {
-		"node": ">=10"
+		"node": ">=16"
 	},
 	"scripts": {
 		"test": "tsc && xo",
-		"build": "tsc && xo",
-		"prepare": "tsc"
+		"build": "tsc"
 	},
 	"files": [
 		"build"
@@ -34,29 +34,29 @@
 		"cli-highlight": "^2.1.9"
 	},
 	"devDependencies": {
-		"@ava/babel": "^1.0.1",
+		"@ava/babel": "^2.0.0",
 		"@babel/preset-react": "^7.10.1",
-		"@sindresorhus/tsconfig": "^0.7.0",
-		"@types/react": "^16.9.46",
-		"@vdemedes/prettier-config": "^1.0.0",
-		"ava": "^3.9.0",
-		"eslint-config-xo-react": "^0.23.0",
-		"eslint-plugin-prettier": "^3.3.0",
+		"@sindresorhus/tsconfig": "^4.0.0",
+		"@types/react": "^18.2.21",
+		"@vdemedes/prettier-config": "^2.0.1",
+		"ava": "^5.3.1",
+		"eslint-config-xo-react": "^0.27.0",
+		"eslint-plugin-prettier": "^5.0.0",
 		"eslint-plugin-react": "^7.20.0",
 		"eslint-plugin-react-hooks": "^4.0.4",
-		"husky": "^4.2.5",
-		"import-jsx": "^4.0.0",
-		"ink": "^3.0.0-4",
-		"ink-testing-library": "^2.0.0",
-		"prettier": "^2.0.5",
-		"pretty-quick": "^2.0.1",
-		"react": "^16.8.2",
-		"typescript": "^3.9.5",
-		"xo": "^0.32.0"
+		"husky": "^8.0.3",
+		"import-jsx": "^5.0.0",
+		"ink": "^4.4.0",
+		"ink-testing-library": "^3.0.0",
+		"prettier": "^3.0.3",
+		"pretty-quick": "^3.1.3",
+		"react": "^18.2.0",
+		"typescript": "^5.2.2",
+		"xo": "^0.56.0"
 	},
 	"peerDependencies": {
-		"ink": "^3.0.0-4",
-		"react": "^16.8.2"
+		"ink": "^4.4.0",
+		"react": "^18.2.0"
 	},
 	"ava": {
 		"babel": {
@@ -79,8 +79,7 @@
 	},
 	"prettier": "@vdemedes/prettier-config",
 	"husky": {
-		"hooks": {
-			"pre-commit": "pretty-quick --staged"
+		"hooks": {			
 		}
 	}
 }
