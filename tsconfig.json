@@ -1,8 +1,10 @@
 {
-	"extends": "@sindresorhus/tsconfig",
+	"extends": "@sindresorhus/tsconfig",	
+	"include": ["source"],
 	"compilerOptions": {
 		"outDir": "build",
 		"target": "es2018",
-		"lib": ["es2018"]
+		"lib": ["es2018"],
+		"skipLibCheck": true
 	}
 }
